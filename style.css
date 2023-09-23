@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+:root {
+  --primary: #3A56B9;
+  --secondery: #627AC6;
+  --spa-light-purple: #A3AFDD;
+  --spa-purple-dark: #540375;
+  --spa-red: #A00074;
+  --spa-pink: #E9A4B4;
+  --black: #000000;
+  --white-color: #fff;
+}
+
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height:  1.625rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: normal;
+  line-height: 1.2;
+}
+
+
+h1 {
+  font-size: 2rem; /* 32px */
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+}
+
+@media screen and (min-width: 991px) {
+h1 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+    font-size: 2.1875rem; /* 35px */
+}
+
+h3 {
+    font-size: 1.75rem; /* 28px */
+ }
+
+h4 {
+    font-size: 1.5rem; /* 24px */
+ }
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+
+  }
+}
+
+@media screen and (min-width: 1360px) {
+h1 {
+    font-size: 2.875rem; /* 46px */
+}
+
+h2 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h3 {
+    font-size: 2.125rem; /* 34px */
+}
+
+h4 {
+    font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+}
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*
+============================
+Main Btn Style Start
+===========================
+*/
+
+.site-btn {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 40px;
+  display: inline-block;
+  color: var(--white-color);
+  background-color: var(--spa-red);
+  transition: 0.3s all ease;
+}
+
+.site-btn:hover {
+  color: var(--white-color);
+  background-color: var(--black);
+}
+
+/*
+==========================
+Main Btn Style End
+==========================
+*/
+
+
+#page {
+  overflow: hidden;
+}
+
+/*
+============================
+Global CSS END
+============================
+*/
+
+/*
+============================
+Header Section Start
+============================
+*/
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.main-header {
+  padding: 30px 0;
+  position: relative;
+}
+
+.main-menu {
+  margin-right: 45px;
+}
+
+.main-menu ul li {
+	position: relative;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.main-menu ul li a {
+  color: var(--black);
+  font-size: 1rem;
+  display: block;
+  font-weight: 400;
+  transition: 0.3s allm ease;
+}
+
+.main-menu ul li:hover > a {
+  color: var(--spa-red);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary);
+}
+
+.main-menu, header-btn-right {
+  margin-left: auto;
+}
+
+.header-btn-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-btn-right .site-btn {
+	padding: 12px 32px;
+  font-weight: 500;
+   font-family: 'Gothic A1', sans-serif;
+}
+
+.header-btn-right .phone-btn {
+  color: var(--white-color);
+  background-color: var(--spa-red);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+}
+
+.header-btn-right .phone-btn:hover {
+  color: var(--white-color);
+  background-color: var(--black);
+}
+
+/*
+============================
+Header Section  End
+============================
+*/
+
+.banner-wrapper {
+  background-color: var(--spa-light-purple);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-item {
+  max-width: 512px;
+}
+
+.banner-item h1 {
+  color: var(--primary);
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.banner-item p {
+  margin-bottom: 20px;
+}
+
+.banner-sm-content {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.banner-btn {
+
+}
+
+
+
+/*
+============================
+Footer Section Start
+============================
+*/
+
+
+
+/*
+============================
+Footer Section End
+============================
+*/
+
+
+
+
+
+
+
+
+/*
+============================
+Responsive Style Start
+============================
+*/
+
+@media screen and (min-width: 1360px) {
+
+.container{
+   max-width: 1340px;
+}
+
+}
+/* -----Laptop--device-screen--------- */
+@media only screen and (max-width:1199px) {
+
+.header-btn-right .phone-btn {
+  display: none;
+}
+
+.main-menu {
+	margin-right: 30px;
+}
+
+.main-menu ul li {
+	margin-left: 15px;
+}
+
+
+}
+/* -----Tablet--device-screen--------- */
+@media only screen and (max-width:991px) {
+
+.hamburger {
+  display: block;
+}
+  
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  
+}
+  
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  
+}
+  
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+  
+.main-menu ul {
+  position: absolute;
+  left: -100%;
+  top: 100%;
+  width: 100%;
+  z-index: 9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  transition: 0.3s all ease;
+  padding: 50px 0;
+}
+  
+.main-menu ul.active {
+  left: 0;
+}
+  
+.main-menu ul li {
+   margin: 12px 0;
+}
+  
+.main-menu ul li a {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+
+
+}
+/* -----Mobile--device-screen--------- */
+@media only screen and (max-width:767px) {
+
+.header-btn-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  display: none;
+}
+
+}
+/*
+============================
+Responsive Style End
+============================
+*/
