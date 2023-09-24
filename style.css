@@ -78,7 +78,7 @@ h6 {
 
 
 h1 {
-  font-size: 2rem; /* 32px */
+  font-size: 1.875rem; /* 30px */
 }
 
 h2 {
@@ -191,6 +191,11 @@ Main Btn Style End
   overflow: hidden;
 }
 
+.section-title h2 {
+  margin-bottom: 20px;
+  color: var(--spa-purple-dark);
+}
+
 /*
 ============================
 Global CSS END
@@ -209,7 +214,8 @@ Header Section Start
 }
 
 .main-header {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -289,13 +295,28 @@ Header Section  End
 ============================
 */
 
+/*
+============================
+Banner Section Start
+============================
+*/
+
 .banner-wrapper {
-  background-color: var(--spa-light-purple);
-  background-size: cover;
-  background-position: center;
-  min-height: 600px;
   display: flex;
   align-items: center;
+  min-height: 750px;
+  background-image: url(assets/images/home-banner.jpg);
+  background-color: #DFDCF2;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-shape {
+  position: absolute;
+  top: 8%;
+  left: 5%;
 }
 
 .banner-item {
@@ -316,10 +337,160 @@ Header Section  End
   font-weight: 700;
   margin-bottom: 30px;
 }
+/*
+============================
+Banner Section End
+============================
+*/
 
-.banner-btn {
-
+/*
+============================
+About Section Start
+============================
+*/
+.about-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
+.primary-text {
+	color: var(--primary) !important;
+}
+
+.about-list li {
+	display: flex;
+	align-items: center;
+	font-size: 1.125rem;
+	line-height: 30px;
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 32px;
+}
+
+.about-list li:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  background-image: url(assets/images/check-primary.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  object-position: center;
+  display: inline-block;
+}
+
+/*
+============================
+About Section End
+============================
+*/
+
+/*
+============================
+Personalize Section Start
+============================
+*/
+
+.personalize-matching-wrapper .section-title {
+  max-width: 780px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.personalize-matching-wrapper .section-title h2 {
+  color: var(--white-color);
+}
+
+.personalize-matching-wrapper .section-title p {
+  color: var(--white-color);
+}
+
+.personalize-matching-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(assets/images/personalize-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--spa-purple-dark);
+}
+
+.personalize-box-wrap {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.count-circle-box {
+  padding: 25px;
+  height: 302px;
+  width: 302px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--spa-pink);
+  overflow: hidden;
+}
+
+.count-circle-box:nth-child(2) {
+  background-color: var(--spa-light-purple);
+}
+
+.count-circle-box:nth-child(3) {
+  background-color: var(--primary);
+}
+
+.count-content {
+	width: 100%;
+	height: 100%;
+	padding: 35px;
+	border-radius: 50%;
+	background-color: var(--white-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+  overflow: hidden;
+}
+
+.count-content h2, .count-content h4 {
+  color: var(--spa-red);
+  font-weight: 600;
+}
+
+.count-content h4 {
+	font-size: 22px;
+}
+
+.count-content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.appointment-btn {
+  text-align: center;
+}
+
+.appointment-btn .site-btn {
+  background: transparent;
+  border: 1px solid var(--white-color);
+}
+
+.appointment-btn:hover .site-btn {
+  background-color: var(--spa-red);
+}
+
+/*
+============================
+Personalize Section End
+============================
+*/
 
 
 
@@ -372,6 +543,9 @@ Responsive Style Start
 	margin-left: 15px;
 }
 
+.banner-wrapper {
+  background-position: center;
+}
 
 }
 /* -----Tablet--device-screen--------- */
@@ -404,7 +578,7 @@ Responsive Style Start
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: var(--black);
+  background-color: var(--primary);
   transition: 0.3s all ease;
   padding: 50px 0;
 }
@@ -420,8 +594,48 @@ Responsive Style Start
 .main-menu ul li a {
   color: var(--white-color);
   font-size: 14px;
+  transition: 0.3s all ease;
 }
 
+.main-menu ul li a:hover {
+  color: var(--spa-pink);
+}
+
+.banner-wrapper {
+	min-height: 620px;
+}
+
+.about-list li {
+	font-size: 1rem;
+}
+
+.about-right {
+	margin-top: 25px;
+}
+
+.personalize-box-wrap {
+	flex-wrap: wrap;
+}
+
+.personalize-box-wrap .count-circle-box:last-child {
+  margin-top: -43px;
+}
+
+.count-content h2, .count-content h4 {
+	margin: 0;
+}
+
+.count-circle-box {
+	padding: 25px;
+	height: 290px;
+	width: 290px;
+}
+
+.count-content p {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 22px;
+}
 
 
 }
@@ -433,6 +647,29 @@ Responsive Style Start
   align-items: center;
   gap: 20px;
   display: none;
+}
+
+.banner-shape {
+	display: none;
+}
+
+.about-wrapper {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.personalize-box-wrap {
+	margin: 25px auto;
+}
+
+.personalize-box-wrap .count-circle-box:last-child {
+	margin-top: 0;
+}
+
+.count-circle-box {
+	padding: 25px;
+	height: 280px;
+	width: 280px;
 }
 
 }
