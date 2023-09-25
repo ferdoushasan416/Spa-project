@@ -303,11 +303,14 @@ Banner Section Start
 ============================
 */
 
+.home.banner-wrapper {
+	min-height: 750px;
+}
+
 .banner-wrapper {
   display: flex;
   align-items: center;
-  min-height: 750px;
-  background-image: url(assets/images/home-banner.jpg);
+  min-height: 500px;
   background-color: #DFDCF2;
   background-size: cover;
   background-position: center right;
@@ -350,9 +353,18 @@ Banner Section End
 About Section Start
 ============================
 */
+
 .about-wrapper {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.about.about-wrapper {
+	margin-top: 50px;
+}
+
+.about.banner-wrapper .banner-item {
+  max-width: 544px;
 }
 
 .primary-text {
@@ -383,8 +395,17 @@ About Section Start
   display: inline-block;
 }
 
+.about .section-title {
+	max-width: 522px;
+}
+
+.about .section-title p {
+	line-height: 30px;
+}
+
 .about-right img {
   margin-right: 50px;
+  margin-left: auto;
 }
 
 .about-content {
@@ -928,8 +949,12 @@ body {
   color: var(--spa-pink);
 }
 
-.banner-wrapper {
+.home.banner-wrapper {
 	min-height: 620px;
+}
+
+.about.about-wrapper {
+	margin-top: 0;
 }
 
 .about-list li {
