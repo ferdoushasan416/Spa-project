@@ -23,18 +23,12 @@ hamburger.addEventListener("click", () => {
 
 
 /* magnificPopup img view */
-$('.popup-image').magnificPopup({
+$('.addres-home').magnificPopup({
 	type: 'image',
 	gallery: {
 	  enabled: true
 	}
 });
-
-/* magnificPopup video view */
-$('.popup-video').magnificPopup({
-	type: 'iframe'
-});
-
 
 // WOW active
 new WOW().init();
