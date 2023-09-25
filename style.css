@@ -4,6 +4,7 @@
   --secondery: #627AC6;
   --dark-blue: #2F2571;
   --spa-light-purple: #A3AFDD;
+  --spa-cream: #FEFAF5;
   --spa-purple-dark: #540375;
   --spa-red: #A00074;
   --spa-pink: #E9A4B4;
@@ -572,6 +573,192 @@ Ourselves Section End
 ============================
 */
 
+/*
+============================
+Our Service Section Start
+============================
+*/
+.our-service-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--spa-cream);
+  position: relative;
+}
+
+.service {
+  position: absolute;
+}
+
+.service.shape-1 {
+  left: 0;
+  top: 42%;
+  width: 15%;
+}
+
+.service.shape-2 {
+  right: 0;
+  top: 0;
+  width: 14%;
+}
+
+.our-service-wrapper .section-title h2 {
+	color: var(--spa-red);
+	margin-bottom: 80px;
+}
+
+.service-box {
+	text-align: center;
+	max-width: 290px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.service-icon img {
+  margin: 0 auto;
+}
+
+.service-content h5 {
+	font-size: 20px;
+	margin-top: 8px;
+	margin-bottom: 15px;
+  color: var(--spa-purple-dark);
+}
+
+.read-more-btn span {
+	padding-left: 5px;
+}
+
+.service-content p {
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  color: var(--spa-purple-dark);
+  font-size: 15px;
+}
+
+.read-more-btn:hover {
+	color: var(--black);
+}
+
+/*
+============================
+Our Service Section End
+============================
+*/
+
+
+/*
+============================
+Our Articles Blog Section 
+============================
+*/
+
+.our-articles-blog-wrapper {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.section-title h3 {
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+.section-title h3 span {
+	font-weight: 600;
+}
+
+.articles-blog-box {
+	background-color: var(--white-color);
+	box-shadow: 0px 0px 40px -2px rgba(221,221,221,0.75);
+	margin-bottom: 30px;
+}
+
+.articles-image {
+  overflow: hidden;
+}
+
+.articles-image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.articles-image:hover img {
+  transform: scale(1.2);
+}
+
+.articles-content {
+	padding: 20px 0 20px 25px;
+}
+
+.articles-content h5 {
+  line-height: 1.5;
+}
+
+.articles-content h5 a:hover {
+  color: var(--spa-purple-dark);
+}
+
+.articles-content .author {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+
+.our-articles-blog-wrapper .site-btn {
+	margin-top: 15px;
+}
+
+/*
+============================
+Our Articles Blog End
+============================
+*/
+
+
+/*
+===============================
+Our Locations Section Start
+===============================
+*/
+
+.our-locations-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--spa-cream);
+}
+
+.our-locations-wrapper .section-title h2 {
+  margin-bottom: 60px;
+}
+
+.locations-box {
+  text-align: center;
+  display: block;
+}
+
+.addres-home img {
+  width: 100%;
+}
+
+.locations-box h4 {
+  color: var(--dark-blue);
+  margin-top: 30px;
+}
+
+.locations-box h4:hover a {
+  color: var(--primary);
+}
+
+
+/*
+===============================
+Our Locations Section End
+===============================
+*/
+
+
 
 
 /*
@@ -610,6 +797,10 @@ Responsive Style Start
 }
 /* -----Laptop--device-screen--------- */
 @media only screen and (max-width:1199px) {
+
+body {
+  font-size: 1rem;
+}
 
 .header-btn-right .phone-btn {
   display: none;
@@ -742,6 +933,30 @@ Responsive Style Start
 	font-size: 16px;
 }
 
+.our-service-wrapper {
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+
+.our-service-wrapper .section-title h2 {
+	margin-bottom: 50px;
+}
+
+.service-box {
+	margin-bottom: 30px;
+}
+
+.service.shape-1 {
+	top: 64%;
+}
+
+.our-locations-wrapper {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: var(--spa-cream);
+}
+
+
 
 }
 /* -----Mobile--device-screen--------- */
@@ -795,6 +1010,23 @@ Responsive Style Start
 	font-size: 18px;
 }
 
+.service-shape {
+	display: none;
+}
+
+.articles-content .author {
+	margin-top: 20px;
+}
+
+.our-locations-wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.locations-box h4 {
+	color: var(--dark-blue);
+	margin-top: 20px;
+}
 
 }
 /*
