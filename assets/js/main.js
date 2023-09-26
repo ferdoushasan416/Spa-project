@@ -20,8 +20,6 @@ hamburger.addEventListener("click", () => {
 
 
 
-
-
 /* magnificPopup img view */
 $('.addres-home').magnificPopup({
 	type: 'image',

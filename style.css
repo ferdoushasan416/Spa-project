@@ -446,7 +446,6 @@ About Section Start
   color: var(--spa-purple-dark);
 }
 
-
 /*
 ============================
 Our Team Section Start
@@ -631,6 +630,41 @@ Our Team Section End
 */
 
 
+/*
+============================
+Spa Offers Section Start
+============================
+*/
+
+.spa-offers-wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: var(--spa-cream);
+}
+
+.spa-offers-box {
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 10px 0px rgba(221,221,221,0.75);
+  text-align: center;
+  padding: 18px 25px 35px 25px;
+  margin-bottom: 30px;
+}
+
+.spa-offers-icon img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.spa-offers-box p {
+  line-height: 30px;
+}
+/*
+============================
+Spa Offers Section End
+============================
+*/
+
 
 
 /*
@@ -638,7 +672,6 @@ Our Team Section End
 Personalize Section Start
 ============================
 */
-
 
 .personalize-matching-wrapper .section-title {
   max-width: 780px;
@@ -794,6 +827,7 @@ Ourselves Section End
 ============================
 */
 
+
 /*
 ============================
 Our Service Section Start
@@ -882,6 +916,7 @@ Our Service Section Start
 Our Service Section Start
 ============================-
 */
+
 
 /*
 ============================
@@ -1056,11 +1091,6 @@ Footer Section Start
 Footer Section End
 ============================
 */
-
-
-
-
-
 
 
 
@@ -1297,7 +1327,7 @@ body {
 	display: none;
 }
 
-.section-title h2, .section-title h4 br {
+br {
 	display: none;
 }
 
@@ -1410,6 +1440,16 @@ body {
 
 .single-team-image img {
 	margin: 0 auto;
+}
+
+.spa-offers-wrapper {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.footer-wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .footer-widget {
