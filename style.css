@@ -401,6 +401,7 @@ About Section Start
 
 .about .section-title p {
 	line-height: 30px;
+	margin-bottom: 15px;
 }
 
 .about-right img {
@@ -428,17 +429,216 @@ About Section Start
 	margin-top: 8px;
 }
 
+.our-approach {
+	padding-bottom: 25px;
+}
+
+.our-focus {
+	background-color: var(--spa-cream);
+	padding-top: 130px;
+}
+
+.our-founder .about-content {
+	max-width: 600px;
+}
+
+.our-founder .about-content h2 {
+  color: var(--spa-purple-dark);
+}
+
+
+/*
+============================
+Our Team Section Start
+============================
+*/
+
+.our-team-wrapper {
+  background-color: var(--spa-cream);
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.our-team-wrapper .section-title {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team-person img {
+  margin: ;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.team-btn {
+	margin-top: 30px;
+}
+/*
+============================
+Our Team Section Start
+============================
+*/
+
 /*
 ============================
 About Section End
 ============================
 */
 
+
+/*
+============================
+Service Section Start
+============================
+*/
+
+.service-content-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.service-content-wrapper .section-title {
+  max-width: 789px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-content-wrapper .section-title h4 {
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.service-content-wrapper .section-title p {
+  margin-bottom: 20px;
+}
+
+.service.about.about-wrapper {
+	background-color: var(--spa-cream);
+	padding-top: 100px;
+	margin-top: 0;
+}
+
+.service .section-title {
+  max-width: 100%;
+}
+
+
+
+
+.service-testimonial-wrapper {
+	background-color: #DFDCF2;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
+}
+
+.test-shape {
+  position: absolute;
+}
+
+.test-shape.shape-1 {
+  left: 16%;
+  bottom: 0;
+}
+
+.test-shape.shape-2 {
+  right: 18%;
+  top: 4%;
+}
+
+.testimonial-text span {
+  color: var(--spa-purple-dark);
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.testimonial-text {
+	max-width: 695px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 9;
+	position: relative;
+}
+
+.testimonial-text p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--spa-purple-dark);
+}
+
+/*
+============================
+Service Section End
+============================
+*/
+
+/*
+============================
+Our Team Section Start
+============================
+*/
+
+.team .banner-item {
+	max-width: 100%;
+}
+
+.team.banner-wrapper {
+	display: block;
+}
+.banner-shape {
+	position: absolute;
+	top: 17%;
+	left: 5%;
+}
+.team .banner-item {
+  margin-top: 62px;
+}
+
+.team-image {
+  position: relative;
+  margin-top: -28%;
+}
+
+.team-box-wrapper {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.single-team-box {
+  max-width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-thumb {
+ margin-top: 15px;
+}
+
+.team-thumb h5 {
+  font-weight: 600;
+}
+
+.team-thumb span {
+  font-size: 18px;
+}
+/*
+============================
+Our Team Section End
+============================
+*/
+
+
+
+
 /*
 ============================
 Personalize Section Start
 ============================
 */
+
 
 .personalize-matching-wrapper .section-title {
   max-width: 780px;
@@ -606,17 +806,17 @@ Our Service Section Start
   position: relative;
 }
 
-.service {
+.service-shape {
   position: absolute;
 }
 
-.service.shape-1 {
+.service-shape.shape-1 {
   left: 0;
   top: 42%;
   width: 15%;
 }
 
-.service.shape-2 {
+.service-shape.shape-2 {
   right: 0;
   top: 0;
   width: 14%;
@@ -662,12 +862,26 @@ Our Service Section Start
 	color: var(--black);
 }
 
-/*
-============================
-Our Service Section End
-============================
-*/
+.service-list-wrapper {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
 
+.list-title {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.list-wrap ul li {
+	margin-bottom: 6px;
+	margin-right: 20px;
+}
+
+/*
+=============================
+Our Service Section Start
+============================-
+*/
 
 /*
 ============================
@@ -891,6 +1105,11 @@ body {
 	height: 100%;
 }
 
+.team.banner-wrapper {
+	min-height: 400px;
+}
+
+
 .footer-widget {
 	gap: 30px;
 }
@@ -1031,6 +1250,26 @@ body {
 	background-color: var(--spa-cream);
 }
 
+.test-shape.shape-2 {
+	right: 0;
+	top: 4%;
+}
+
+.test-shape.shape-1 {
+	left: 0;
+}
+
+.team.banner-wrapper {
+	min-height: 325px;
+}
+
+.team .banner-shape {
+	position: absolute;
+	top: 17%;
+	left: 5%;
+	width: 35%;
+}
+
 .footer-widget {
 	justify-content: space-between;
 }
@@ -1043,6 +1282,10 @@ body {
 /* -----Mobile--device-screen--------- */
 @media only screen and (max-width:767px) {
 
+.banner-wrapper {
+  min-height: 305px;
+}
+
 .header-btn-right {
   display: flex;
   align-items: center;
@@ -1051,6 +1294,10 @@ body {
 }
 
 .banner-shape {
+	display: none;
+}
+
+.section-title h2, .section-title h4 br {
 	display: none;
 }
 
@@ -1091,6 +1338,10 @@ body {
 	font-size: 18px;
 }
 
+.service.about.about-wrapper {
+	padding-top: 50px;
+}
+
 .service-shape {
 	display: none;
 }
@@ -1119,6 +1370,46 @@ body {
 
 .locations-box {
 	margin-bottom: 20px;
+}
+
+.test-shape {
+	position: absolute;
+	display: none;
+}
+
+.testimonial-text span {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.testimonial-text p {
+	font-size: 16px;
+}
+
+.service-list-wrapper {
+	padding-top: 60px;
+}
+
+.list-title {
+	color: var(--primary);
+	margin-bottom: 12px;
+}
+
+.list-wrap ul li {
+	margin-right: ;
+}
+
+.team.banner-wrapper {
+	min-height: 250px;
+}
+
+.single-team-box {
+	max-width: 100%;
+	margin-bottom: 15px;
+}
+
+.single-team-image img {
+	margin: 0 auto;
 }
 
 .footer-widget {
