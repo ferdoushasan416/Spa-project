@@ -465,7 +465,6 @@ Our Team Section Start
 }
 
 .team-person img {
-  margin: ;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
@@ -1423,10 +1422,6 @@ br {
 .list-title {
 	color: var(--primary);
 	margin-bottom: 12px;
-}
-
-.list-wrap ul li {
-	margin-right: ;
 }
 
 .team.banner-wrapper {
