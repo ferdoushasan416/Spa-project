@@ -318,6 +318,9 @@ Banner Section Start
   position: relative;
 }
 
+.home .banner-shape {
+	top: 8%;
+}
 .banner-shape {
   position: absolute;
   top: 8%;
