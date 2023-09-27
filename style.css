@@ -366,7 +366,7 @@ About Section Start
 	margin-top: 50px;
 }
 
-.about.banner-wrapper .banner-item {
+.about.banner-wrapper .banner-item, .careers.banner-wrapper .banner-item {
   max-width: 544px;
 }
 
